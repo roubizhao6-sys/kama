@@ -500,5 +500,14 @@
   hideHintSoon();
 })();
 </script>
+
+<div id="wx-hint" style="position:fixed;left:50%;bottom:26px;z-index:999;padding:10px 18px;border-radius:999px;
+  background:rgba(20,20,22,.88);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#fff;
+  font-size:13px;letter-spacing:.02em;white-space:nowrap;opacity:0;transform:translate(-50%,10px);
+  transition:opacity .6s ease,transform .6s ease;pointer-events:none">点右上角「···」可以分享给朋友</div>
+<script>(function(){if(!/MicroMessenger/i.test(navigator.userAgent))return;
+var h=document.getElementById('wx-hint');setTimeout(function(){h.style.opacity='1';h.style.transform='translate(-50%,0)';},1400);
+setTimeout(function(){h.style.opacity='0';},7000);})();</script>
+
 </body>
 </html>
